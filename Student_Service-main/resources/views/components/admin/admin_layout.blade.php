@@ -1,0 +1,11 @@
+<x-general.layout>
+    @if(isset(auth()->user()->admin->id))
+        <main>
+            <x-admin.admin_nav/>
+            <x-admin.admin_aside/>
+            <x-admin.admin_main>
+                {{$slot}}
+            </x-admin.admin_main>
+        </main>
+    @endif
+</x-general.layout>

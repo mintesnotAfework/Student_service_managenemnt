@@ -1,0 +1,9 @@
+<x-general.layout>
+    <main>
+        <x-student.nav/>
+        <x-parent.aside/>
+        <x-student.main>
+            {{$slot}}
+        </x-student.main>
+    </main>
+</x-general.layout>
